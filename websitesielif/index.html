@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Autobiography - Vintage Edition</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Special+Elite&display=swap');
+        
+        /* Base Styles */
+        body {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            color: #3a3a3a;
+            background-color: #f5f1e8;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 15c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d6c9a9' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Special Elite', cursive;
+            letter-spacing: 1px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(rgba(61, 41, 26, 0.9), rgba(61, 41, 26, 0.85)), 
+            url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%238f775b' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            color: #f5f1e8;
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 1.5s ease-out;
+        }
+        
+        header p {
+            font-size: 20px;
+            margin-top: 0;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            animation: fadeInUp 1.5s ease-out;
+        }
+        
+        /* Profile Picture */
+        .profile-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 25px;
+            animation: fadeIn 2s ease;
+        }
+        
+        .profile-frame {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            top: -10px;
+            left: -10px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cpath fill='none' stroke='%23d6bc87' stroke-width='8' d='M210,110 C210,165.23 165.23,210 110,210 C54.77,210 10,165.23 10,110 C10,54.77 54.77,10 110,10 C165.23,10 210,54.77 210,110 Z'/%3E%3C/svg%3E");
+            animation: rotate 60s linear infinite;
+        }
+        
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #d6bc87;
+            border: 5px solid #3d291a;
+            object-fit: cover;
+            filter: sepia(30%);
+            transition: all 0.5s ease;
+        }
+        
+        .profile-pic:hover {
+            filter: sepia(0%);
+            transform: scale(1.05);
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #3d291a;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        nav a {
+            color: #d6bc87;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-family: 'Special Elite', cursive;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #d6bc87;
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #f5f1e8;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Sections */
+        section {
+            padding: 60px 0;
+            border-bottom: 2px solid #d6bc87;
+            position: relative;
+        }
+        
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background-color: #d6bc87;
+        }
+        
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            color: #3d291a;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        section h2::after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 3px;
+            background-color: #d6bc87;
+            bottom: -10px;
+            left: 10%;
+        }
+        
+        /* Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .gallery-item {
+            width: 240px;
+            height: 180px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+        
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(transparent 80%, rgba(61, 41, 26, 0.8));
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover::before {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: sepia(30%);
+            transition: all 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            filter: sepia(0%);
+        }
+        
+        .photo-caption {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: #f5f1e8;
+            font-family: 'Special Elite', cursive;
+            font-size: 14px;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover .photo-caption {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Contact */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .contact-card {
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #d6bc87;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+        
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d6bc87' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 5v1H5V0zm1 5v1H5v-1h1z'/%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.8;
+            z-index: -1;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .contact-card h3 {
+            color: #3d291a;
+            margin-top: 0;
+            font-size: 22px;
+        }
+        
+        .contact-card p {
+            margin: 10px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #3d291a;
+            color: #f5f1e8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h10v12H0V0zm10 0h10v12H10V0z' fill='%23d6bc87' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .signature {
+            font-family: 'Special Elite', cursive;
+            font-size: 24px;
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Page Transition Animation */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        /* Additional Vintage Animations */
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #d6bc87;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .1em;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #d6bc87 }
+        }
+        
+        /* Vintage Decoration */
+        .vintage-corner {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='none' stroke='%23d6bc87' stroke-width='2' d='M10,10 C50,10 90,10 90,90'/%3E%3Cpath fill='none' stroke='%23d6bc87' stroke-width='2' d='M20,20 C50,20 80,20 80,80'/%3E%3Cpath fill='none' stroke='%23d6bc87' stroke-width='2' d='M30,30 C50,30 70,30 70,70'/%3E%3C/svg%3E");
+            opacity: 0.7;
+        }
+        
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+        
+        .top-right {
+            top: 0;
+            right: 0;
+            transform: rotate(90deg);
+        }
+        
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            transform: rotate(-90deg);
+        }
+        
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+        
+        /* Stamp */
+        .vintage-stamp {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Ccircle cx='75' cy='75' r='60' fill='none' stroke='%23d6bc87' stroke-width='2' stroke-dasharray='5,5' /%3E%3Ccircle cx='75' cy='75' r='45' fill='none' stroke='%23d6bc87' stroke-width='1' /%3E%3C/svg%3E");
+            opacity: 0.5;
+            z-index: -1;
+        }
+        
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+            
+            .profile-container, .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .profile-frame {
+                width: 170px;
+                height: 170px;
+                top: -10px;
+                left: -10px;
+            }
+            
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            header {
+                padding: 50px 20px;
+            }
+            
+            header h1 {
+                font-size: 28px;
+            }
+            
+            section h2 {
+                font-size: 28px;
+            }
+            
+            .content h3 {
+                font-size: 20px;
+            }
+            
+            .profile-container, .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .profile-frame {
+                width: 140px;
+                height: 140px;
+            }
+            
+            nav a {
+                margin: 0 4px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="vintage-corner top-left"></div>
+        <div class="vintage-corner top-right"></div>
+        
+        <div class="profile-container">
+            <div class="profile-frame"></div>
+            <img class="profile-pic" src="1..jpg" alt="Your Photo">
+        </div>
+        
+        <h1>ELİF GÖĞEBAKAN</h1>
+        <p></p>
+        
+        <div class="vintage-corner bottom-left"></div>
+        <div class="vintage-corner bottom-right"></div>
+    </header>
+    
+    <nav>
+        <a href="#about">HAKKIMDA</a>
+        <a href="#education">EĞİTİM</a>
+        <a href="#gallery">GALERİ</a>
+        <a href="#contact">İLETİŞİM</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <div class="vintage-stamp" style="right: 50px; top: 100px;"></div>
+            <h2>HAKKIMDA</h2>
+            <p>Ben Elif Göğebakan. 22 yaşında bir mimarlık öğrencisiyim. Fotoğraf çekmek en büyük ilgi alanlarımdan biridir. Bu sitede çektiğim fotoğraflardan bazılarını arşivleyeceğim.  </p>
+            
+        </section>
+        
+        <section id="education">
+            <div class="vintage-stamp" style="right: 100px; top: 200px;"></div>
+            <h2>EĞİTİM HAYATIM</h2>
+            <p>Lise eğitimimi Karatay Toki Anadolu Lisesi`nde tamamladım. Ardından Gazi Üniversitesi Mimarlık Bölümünde 1 yıl hazırlık eğitimi olmak üzere 2 yıl eğitim aldım. Şu an Mimar Sinan Güzel Sanatlar Üniversitesi`nde Mimarlık Bölümü`nde eğitimime devam etmekteyim.</p>
+           
+        </section>
+        
+        <section id="gallery" class="fade-in">
+            <div class="vintage-stamp" style="left: 80px; top: 150px;"></div>
+            <h2>GALERİ</h2>
+           
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="2..jpg">
+                    <div class="photo-caption">resim</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="3..jpg" >
+                    <div class="photo-caption">resim</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="21..jpg" >
+                    <div class="photo-caption">resim</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="5..jpg">
+                    <div class="photo-caption">resim</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="19..jpg" >
+                    <div class="photo-caption">resim</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="7..jpg">
+                    <div class="photo-caption">resim</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="10..jpg" >
+                    <div class="photo-caption">resim</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="20..jpg" >
+                    <div class="photo-caption">resim</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="22..jpg" >
+                    <div class="photo-caption">resim</div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="contact">
+            <div class="vintage-stamp" style="right: 70px; top: 100px;"></div>
+            <h2>iletişim</h2>
+            <p>Benimle iletişime geçmek için aşağıdaki kanalları kullanabilirsiniz. :)</p>
+            
+            <div class="contact-container">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>elifgogebakan1@icloud.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>SOSYAL MEDYA</h3>
+                    <p>@artedelif/@imprudentelif</p>
+                </div>
+            </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+         
+        </div>
+    </footer>
+
+    <script>
+        // Animation for gallery items
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery animation
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        // Add delay for each item to create a staggered effect
+                        setTimeout(() => {
+                            entry.target.style.opacity = 1;
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 150);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {threshold: 0.1});
+            
+            galleryItems.forEach(item => {
+                item.style.opacity = 0;
+                item.style.transform = 'translateY(30px)';
+                observer.observe(item);
+            });
+            
+            // Add hover effect to navigation
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
